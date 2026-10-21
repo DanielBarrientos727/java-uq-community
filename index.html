@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es" data-theme="mocha">
 <head>
@@ -7,14 +6,33 @@
 
     <meta
         name="description"
-        content="Portal comunitario de recursos académicos: talleres, apuntes, diapositivas y documentación para estudiantes."
+        content="Java UQ Community: comunidad de aprendizaje y recursos de programación, software y ciencias de la computación para estudiantes de la Universidad del Quindío."
     >
+
     <meta name="author" content="Java UQ Community">
     <meta name="theme-color" content="#1e1e2e">
 
-    <title>Java UQ Community | Recursos académicos</title>
+    <title>Java UQ Community | Aprende, comparte y programa</title>
 
+    <!-- Hoja de estilos del proyecto -->
     <link rel="stylesheet" href="./CSS/style.css">
+
+    <!-- Iconos externos -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <!-- Fuentes externas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- JavaScript del proyecto -->
     <script src="./js/main.js" defer></script>
 </head>
 
@@ -24,9 +42,20 @@
     </a>
 
     <div class="app">
+
+        <!-- =========================================
+             BARRA DE NAVEGACIÓN
+        ========================================== -->
         <header class="topbar">
-            <a class="brand" href="./index.html" aria-label="Java UQ Community, inicio">
-                <span class="brand-icon" aria-hidden="true">&lt;/&gt;</span>
+            <a
+                class="brand"
+                href="./index.html"
+                aria-label="Java UQ Community, página de inicio"
+            >
+                <span class="brand-icon" aria-hidden="true">
+                    <i class="fa-solid fa-code"></i>
+                </span>
+
                 <span class="brand-copy">
                     <strong>Java UQ</strong>
                     <span>COMMUNITY</span>
@@ -34,87 +63,573 @@
             </a>
 
             <nav class="topnav" aria-label="Navegación principal">
-                <a class="nav-link active" href="#recursos">Recursos</a>
-                <a class="nav-link" href="#contribuir">Contribuir</a>
-                <a class="nav-link" href="#acerca">Acerca de</a>
+                <a class="nav-link active" href="#recursos">
+                    <i class="fa-solid fa-book-open" aria-hidden="true"></i>
+                    Recursos
+                </a>
+
+                <a class="nav-link" href="#asignaturas">
+                    <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                    Asignaturas
+                </a>
+
+                <a class="nav-link" href="#contribuir">
+                    <i class="fa-solid fa-handshake-angle" aria-hidden="true"></i>
+                    Contribuir
+                </a>
+
+                <a
+                    class="nav-link"
+                    href="https://t.me/IngesisUniquindio"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <i class="fa-brands fa-telegram" aria-hidden="true"></i>
+                    Comunidad
+                </a>
             </nav>
 
-            <span class="status-label">
+            <a
+                class="status-label"
+                href="https://t.me/IngesisUniquindio"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Ir al grupo de Telegram de la comunidad"
+            >
                 <span class="status-dot" aria-hidden="true"></span>
                 Comunidad abierta
-            </span>
+            </a>
         </header>
 
+
+        <!-- =========================================
+             CONTENIDO PRINCIPAL
+        ========================================== -->
         <main id="mainContent">
+
+            <!-- =====================================
+                 PRESENTACIÓN
+            ====================================== -->
             <section class="hero" aria-labelledby="heroTitle">
                 <div class="hero-content">
+
                     <span class="eyebrow">
-                        <span aria-hidden="true">✳</span>
-                        CONOCIMIENTO COMPARTIDO
+                        <i class="fa-solid fa-terminal" aria-hidden="true"></i>
+                        PROGRAMACIÓN · COMPUTACIÓN · COMUNIDAD
                     </span>
 
                     <h1 id="heroTitle">
-                        Aprende. Comparte.<br>
+                        Aprende. Comparte.
+                        <br>
                         <span>Construye conocimiento.</span>
                     </h1>
 
                     <p class="hero-description">
-                        Un espacio comunitario para encontrar recursos
-                        académicos, estudiar programación y compartir
-                        materiales útiles con otros estudiantes.
+                        Una comunidad para aprender programación, encontrar
+                        recursos académicos y compartir conocimiento con otros
+                        estudiantes de la Universidad del Quindío.
                     </p>
 
-                    <a class="button button-primary" href="#recursos">
-                        Explorar recursos
-                        <span aria-hidden="true">→</span>
-                    </a>
+                    <div
+                        style="
+                            display: flex;
+                            flex-wrap: wrap;
+                            gap: 0.75rem;
+                            margin-top: 1.5rem;
+                        "
+                    >
+                        <a class="button button-primary" href="#recursos">
+                            <i class="fa-solid fa-compass" aria-hidden="true"></i>
+                            Explorar recursos
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+
+                        <a
+                            class="button button-secondary"
+                            href="https://t.me/IngesisUniquindio"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <i class="fa-brands fa-telegram" aria-hidden="true"></i>
+                            Ir al grupo
+                        </a>
+                    </div>
+
+                    <div
+                        style="
+                            display: flex;
+                            flex-wrap: wrap;
+                            gap: 1.25rem;
+                            margin-top: 1.75rem;
+                        "
+                    >
+                        <span>
+                            <i
+                                class="fa-solid fa-users"
+                                aria-hidden="true"
+                                style="margin-right: 0.4rem;"
+                            ></i>
+                            Aprendizaje colaborativo
+                        </span>
+
+                        <span>
+                            <i
+                                class="fa-solid fa-book"
+                                aria-hidden="true"
+                                style="margin-right: 0.4rem;"
+                            ></i>
+                            Recursos académicos
+                        </span>
+
+                        <span>
+                            <i
+                                class="fa-solid fa-code"
+                                aria-hidden="true"
+                                style="margin-right: 0.4rem;"
+                            ></i>
+                            Programación
+                        </span>
+                    </div>
                 </div>
 
+                <!-- Imagen externa para la portada -->
                 <div class="hero-decoration" aria-hidden="true">
                     <div class="orb orb-one"></div>
                     <div class="orb orb-two"></div>
+
                     <div class="code-window">
                         <div class="window-bar">
                             <span></span>
                             <span></span>
                             <span></span>
-                            <span class="window-title">study.java</span>
+
+                            <span class="window-title">
+                                java-uq-community
+                            </span>
                         </div>
-                        <pre><code><span class="syntax-purple">public class</span> <span class="syntax-blue">Aprendizaje</span> {
-    <span class="syntax-purple">public static void</span> estudiar() {
-        <span class="syntax-green">compartir</span>();
-        <span class="syntax-green">aprender</span>();
-    }
-}</code></pre>
+
+                        <img
+                            src="https://images.unsplash.com/photo-1540397106260-e24a507a08ea?auto=format&fit=crop&w=1000&q=85"
+                            alt=""
+                            fetchpriority="high"
+                            decoding="async"
+                            style="
+                                display: block;
+                                width: 100%;
+                                height: auto;
+                                aspect-ratio: 4 / 3;
+                                object-fit: cover;
+                                border-radius: 10px;
+                            "
+                        >
+
+                        <div
+                            style="
+                                display: flex;
+                                align-items: center;
+                                gap: 0.6rem;
+                                padding: 0.9rem 0.2rem 0.1rem;
+                            "
+                        >
+                            <i
+                                class="fa-solid fa-code"
+                                style="color: #cba6f7;"
+                            ></i>
+
+                            <span>
+                                Aprender es mejor cuando compartimos.
+                            </span>
+                        </div>
                     </div>
-                    <span class="decoration-label">LEARN TOGETHER_</span>
+
+                    <span class="decoration-label">
+                        LEARN TOGETHER_
+                    </span>
                 </div>
             </section>
 
-            <section class="resource-section" id="recursos"
-                aria-labelledby="resourcesTitle">
 
+            <!-- =====================================
+                 ÁREAS Y ASIGNATURAS
+            ====================================== -->
+            <section
+                class="guidelines-section"
+                id="asignaturas"
+                aria-labelledby="subjectsTitle"
+            >
+                <div>
+                    <span class="eyebrow">
+                        <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                        RUTAS DE APRENDIZAJE
+                    </span>
+
+                    <h2 id="subjectsTitle">
+                        ¿Qué estás estudiando?
+                    </h2>
+
+                    <p class="section-description">
+                        Explora las áreas relacionadas con la programación
+                        y las ciencias de la computación. Aquí podrás encontrar
+                        o compartir materiales asociados a tus asignaturas.
+                    </p>
+                </div>
+
+
+                <!-- Núcleo de programación -->
+                <div style="margin-top: 2rem;">
+                    <h3
+                        style="
+                            display: flex;
+                            align-items: center;
+                            gap: 0.65rem;
+                            margin-bottom: 1rem;
+                        "
+                    >
+                        <i
+                            class="fa-solid fa-code"
+                            style="color: #cba6f7;"
+                            aria-hidden="true"
+                        ></i>
+
+                        Núcleo de programación
+                    </h3>
+
+                    <p class="section-description">
+                        Desde el pensamiento algorítmico hasta la construcción
+                        de soluciones y aplicaciones más complejas.
+                    </p>
+                </div>
+
+                <div class="guidelines-grid">
+
+                    <article class="guideline-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=700&q=80"
+                            alt="Código fuente en la pantalla de un computador"
+                            loading="lazy"
+                            decoding="async"
+                            style="display:block;width:100%;height:140px;object-fit:cover;border-radius:12px;margin-bottom:1rem;"
+                        >
+
+                        <span class="guideline-number">
+                            <i class="fa-solid fa-brain" aria-hidden="true"></i>
+                        </span>
+
+                        <h3>Lógica de Programación</h3>
+
+                        <p>
+                            Bases de algoritmos, resolución de problemas
+                            y pensamiento computacional.
+                        </p>
+                    </article>
+
+
+                    <article class="guideline-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=700&q=80"
+                            alt="Entorno de programación en un computador"
+                            loading="lazy"
+                            decoding="async"
+                            style="display:block;width:100%;height:140px;object-fit:cover;border-radius:12px;margin-bottom:1rem;"
+                        >
+
+                        <span class="guideline-number">
+                            <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                        </span>
+
+                        <h3>Programación I</h3>
+
+                        <p>
+                            Fundamentos de programación, lenguaje,
+                            sintaxis y construcción de programas.
+                        </p>
+                    </article>
+
+
+                    <article class="guideline-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=700&q=80"
+                            alt="Código de programación en una pantalla"
+                            loading="lazy"
+                            decoding="async"
+                            style="display:block;width:100%;height:140px;object-fit:cover;border-radius:12px;margin-bottom:1rem;"
+                        >
+
+                        <span class="guideline-number">
+                            <i class="fa-solid fa-cubes" aria-hidden="true"></i>
+                        </span>
+
+                        <h3>Programación II</h3>
+
+                        <p>
+                            Programación orientada a objetos y estructuras
+                            básicas para desarrollar software.
+                        </p>
+                    </article>
+
+
+                    <article class="guideline-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=700&q=80"
+                            alt="Editor de código utilizado para el desarrollo de software"
+                            loading="lazy"
+                            decoding="async"
+                            style="display:block;width:100%;height:140px;object-fit:cover;border-radius:12px;margin-bottom:1rem;"
+                        >
+
+                        <span class="guideline-number">
+                            <i class="fa-solid fa-gears" aria-hidden="true"></i>
+                        </span>
+
+                        <h3>Programación III</h3>
+
+                        <p>
+                            Desarrollo avanzado y aplicación integrada
+                            de los conocimientos de programación.
+                        </p>
+                    </article>
+
+
+                    <article class="guideline-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=700&q=80"
+                            alt="Componentes electrónicos de un sistema informático"
+                            loading="lazy"
+                            decoding="async"
+                            style="display:block;width:100%;height:140px;object-fit:cover;border-radius:12px;margin-bottom:1rem;"
+                        >
+
+                        <span class="guideline-number">
+                            <i class="fa-solid fa-diagram-project" aria-hidden="true"></i>
+                        </span>
+
+                        <h3>Estructuras de Datos</h3>
+
+                        <p>
+                            Organización, almacenamiento y manipulación
+                            eficiente de información en los programas.
+                        </p>
+                    </article>
+
+
+                    <article class="guideline-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=700&q=80"
+                            alt="Equipo de trabajo colaborando en un proyecto tecnológico"
+                            loading="lazy"
+                            decoding="async"
+                            style="display:block;width:100%;height:140px;object-fit:cover;border-radius:12px;margin-bottom:1rem;"
+                        >
+
+                        <span class="guideline-number">
+                            <i class="fa-solid fa-rocket" aria-hidden="true"></i>
+                        </span>
+
+                        <h3>Programación Avanzada</h3>
+
+                        <p>
+                            Profundización en técnicas, herramientas
+                            y soluciones de programación.
+                        </p>
+                    </article>
+
+                </div>
+
+
+                <!-- Áreas relacionadas -->
+                <div style="margin-top: 3rem;">
+                    <h3
+                        style="
+                            display: flex;
+                            align-items: center;
+                            gap: 0.65rem;
+                            margin-bottom: 1rem;
+                        "
+                    >
+                        <i
+                            class="fa-solid fa-microchip"
+                            style="color: #89b4fa;"
+                            aria-hidden="true"
+                        ></i>
+
+                        Áreas relacionadas con software y computación
+                    </h3>
+
+                    <p class="section-description">
+                        Otras áreas para intercambiar documentación,
+                        ejercicios, proyectos y material de estudio.
+                    </p>
+                </div>
+
+                <div class="guidelines-grid" style="margin-top: 1.5rem;">
+
+                    <article class="guideline-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&w=700&q=80"
+                            alt="Visualización de información y datos digitales"
+                            loading="lazy"
+                            decoding="async"
+                            style="display:block;width:100%;height:140px;object-fit:cover;border-radius:12px;margin-bottom:1rem;"
+                        >
+
+                        <span class="guideline-number">
+                            <i class="fa-solid fa-database" aria-hidden="true"></i>
+                        </span>
+
+                        <h3>Bases de Datos</h3>
+
+                        <p>
+                            Diseño, modelado, consultas y gestión
+                            de información.
+                        </p>
+                    </article>
+
+
+                    <article class="guideline-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=700&q=80"
+                            alt="Planificación y documentación de un proyecto"
+                            loading="lazy"
+                            decoding="async"
+                            style="display:block;width:100%;height:140px;object-fit:cover;border-radius:12px;margin-bottom:1rem;"
+                        >
+
+                        <span class="guideline-number">
+                            <i class="fa-solid fa-sitemap" aria-hidden="true"></i>
+                        </span>
+
+                        <h3>Ingeniería de Software</h3>
+
+                        <p>
+                            Análisis, diseño, desarrollo, pruebas
+                            y mantenimiento de sistemas.
+                        </p>
+                    </article>
+
+
+                    <article class="guideline-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=700&q=80"
+                            alt="Representación visual de inteligencia artificial"
+                            loading="lazy"
+                            decoding="async"
+                            style="display:block;width:100%;height:140px;object-fit:cover;border-radius:12px;margin-bottom:1rem;"
+                        >
+
+                        <span class="guideline-number">
+                            <i class="fa-solid fa-robot" aria-hidden="true"></i>
+                        </span>
+
+                        <h3>Inteligencia Artificial</h3>
+
+                        <p>
+                            Algoritmos inteligentes, aprendizaje automático
+                            y aplicaciones de IA.
+                        </p>
+                    </article>
+
+
+                    <article class="guideline-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=700&q=80"
+                            alt="Gráficos y paneles de análisis de datos"
+                            loading="lazy"
+                            decoding="async"
+                            style="display:block;width:100%;height:140px;object-fit:cover;border-radius:12px;margin-bottom:1rem;"
+                        >
+
+                        <span class="guideline-number">
+                            <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+                        </span>
+
+                        <h3>Análisis de Datos</h3>
+
+                        <p>
+                            Procesamiento, análisis, interpretación
+                            y visualización de información.
+                        </p>
+                    </article>
+
+
+                    <article class="guideline-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=700&q=80"
+                            alt="Desarrollo de aplicaciones en un computador portátil"
+                            loading="lazy"
+                            decoding="async"
+                            style="display:block;width:100%;height:140px;object-fit:cover;border-radius:12px;margin-bottom:1rem;"
+                        >
+
+                        <span class="guideline-number">
+                            <i class="fa-solid fa-globe" aria-hidden="true"></i>
+                        </span>
+
+                        <h3>Desarrollo de Aplicaciones / Web</h3>
+
+                        <p>
+                            Diseño y construcción de aplicaciones,
+                            páginas y servicios web.
+                        </p>
+                    </article>
+
+                </div>
+
+                <p class="contribution-note" style="margin-top: 1.5rem;">
+                    Estas categorías organizan los recursos de la comunidad.
+                    No representan por sí mismas un listado oficial completo
+                    del plan de estudios de la Universidad del Quindío.
+                </p>
+            </section>
+
+
+            <!-- =====================================
+                 BIBLIOTECA DE RECURSOS
+            ====================================== -->
+            <section
+                class="resource-section"
+                id="recursos"
+                aria-labelledby="resourcesTitle"
+            >
                 <div class="section-heading">
                     <div>
-                        <span class="eyebrow">BIBLIOTECA DIGITAL</span>
-                        <h2 id="resourcesTitle">Explora los recursos</h2>
+                        <span class="eyebrow">
+                            <i class="fa-solid fa-book-open" aria-hidden="true"></i>
+                            BIBLIOTECA DIGITAL
+                        </span>
+
+                        <h2 id="resourcesTitle">
+                            Explora los recursos
+                        </h2>
+
                         <p class="section-description">
-                            Material organizado para encontrar lo que necesitas.
+                            Talleres, apuntes, guías, presentaciones,
+                            ejercicios y documentación para estudiar
+                            y aprender en comunidad.
                         </p>
                     </div>
 
-                    <span class="resource-total" id="resultCount"
-                        aria-live="polite" aria-atomic="true">
+                    <span
+                        class="resource-total"
+                        id="resultCount"
+                        aria-live="polite"
+                        aria-atomic="true"
+                    >
                         Cargando recursos...
                     </span>
                 </div>
 
+
+                <!-- Búsqueda y filtros -->
                 <div class="filters">
                     <div class="search-wrap">
                         <label class="sr-only" for="searchInput">
                             Buscar recursos
                         </label>
-                        <span class="search-icon" aria-hidden="true">⌕</span>
+
+                        <span class="search-icon" aria-hidden="true">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+
                         <input
                             id="searchInput"
                             type="search"
@@ -122,153 +637,384 @@
                             autocomplete="off"
                             spellcheck="false"
                         >
+
                         <kbd>Buscar</kbd>
                     </div>
 
                     <div class="filter-row">
                         <div class="filter-control">
-                            <label for="subjectFilter">Asignatura</label>
+                            <label for="subjectFilter">
+                                <i class="fa-solid fa-book" aria-hidden="true"></i>
+                                Asignatura
+                            </label>
+
                             <select id="subjectFilter">
-                                <option value="all">Todas las asignaturas</option>
+                                <option value="all">
+                                    Todas las asignaturas
+                                </option>
                             </select>
                         </div>
 
                         <div class="filter-control">
-                            <label for="typeFilter">Tipo de recurso</label>
+                            <label for="typeFilter">
+                                <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+                                Tipo de recurso
+                            </label>
+
                             <select id="typeFilter">
-                                <option value="all">Todos los tipos</option>
+                                <option value="all">
+                                    Todos los tipos
+                                </option>
                             </select>
                         </div>
 
-                        <button class="button button-secondary"
-                            id="clearFilters" type="button">
+                        <button
+                            class="button button-secondary"
+                            id="clearFilters"
+                            type="button"
+                        >
+                            <i class="fa-solid fa-rotate-left" aria-hidden="true"></i>
                             Limpiar filtros
                         </button>
                     </div>
                 </div>
 
+
                 <div class="results-heading">
-                    <h3>Biblioteca de materiales</h3>
-                    <span id="activeFilterLabel">Todos los recursos</span>
+                    <h3>
+                        <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+                        Biblioteca de materiales
+                    </h3>
+
+                    <span id="activeFilterLabel">
+                        Todos los recursos
+                    </span>
                 </div>
 
-                <div class="resource-grid" id="resourceGrid"
-                    aria-busy="true">
-                    <p class="loading-message">Cargando biblioteca...</p>
+
+                <!-- Los recursos son cargados desde data/materials.json -->
+                <div
+                    class="resource-grid"
+                    id="resourceGrid"
+                    aria-busy="true"
+                >
+                    <p class="loading-message">
+                        <i class="fa-solid fa-spinner fa-spin" aria-hidden="true"></i>
+                        Cargando biblioteca...
+                    </p>
                 </div>
+
 
                 <div class="empty-state" id="emptyState" hidden>
-                    <span class="empty-icon" aria-hidden="true">⌕</span>
+                    <span class="empty-icon" aria-hidden="true">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+
                     <h3>No encontramos resultados</h3>
+
                     <p>
                         Prueba con otras palabras o elimina alguno de los filtros.
                     </p>
-                    <button class="button button-secondary"
-                        id="emptyClearFilters" type="button">
+
+                    <button
+                        class="button button-secondary"
+                        id="emptyClearFilters"
+                        type="button"
+                    >
+                        <i class="fa-solid fa-list" aria-hidden="true"></i>
                         Mostrar todos los recursos
                     </button>
                 </div>
 
+
                 <p class="catalog-note" id="catalogNote">
+                    <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
                     Los enlaces llevan a sus respectivas fuentes.
                     Comprueba las condiciones de uso de cada material.
                 </p>
+
+
+                <div
+                    style="
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        justify-content: space-between;
+                        gap: 1rem;
+                        margin-top: 1.5rem;
+                    "
+                >
+                    <p style="margin: 0;">
+                        ¿Conoces un recurso que debería estar aquí?
+                    </p>
+
+                    <a
+                        class="button button-secondary"
+                        href="https://t.me/IngesisUniquindio"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i class="fa-brands fa-telegram" aria-hidden="true"></i>
+                        Proponer un recurso
+                        <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                    </a>
+                </div>
             </section>
 
-            <section class="contribute-section" id="contribuir"
-                aria-labelledby="contributeTitle">
+
+            <!-- =====================================
+                 CONTRIBUCIONES
+            ====================================== -->
+            <section
+                class="contribute-section"
+                id="contribuir"
+                aria-labelledby="contributeTitle"
+            >
                 <div class="contribute-icon" aria-hidden="true">
-                    <span>+</span>
+                    <i class="fa-solid fa-users"></i>
                 </div>
 
                 <div class="contribute-copy">
-                    <span class="eyebrow">LA COMUNIDAD LA CONSTRUIMOS TODOS</span>
-                    <h2 id="contributeTitle">¿Tienes algo útil que compartir?</h2>
+                    <span class="eyebrow">
+                        LA COMUNIDAD LA CONSTRUIMOS TODOS
+                    </span>
+
+                    <h2 id="contributeTitle">
+                        ¿Tienes algo útil que compartir?
+                    </h2>
+
                     <p>
-                        Puedes proponer talleres, apuntes propios, presentaciones
-                        autorizadas o documentación que ayude a otros estudiantes.
+                        Puedes compartir talleres, apuntes propios,
+                        presentaciones autorizadas, ejercicios, proyectos,
+                        enlaces y documentación que ayude a otros estudiantes.
+                        El conocimiento crece cuando lo ponemos en común.
                     </p>
                 </div>
 
-                <a class="button button-primary"
-                    href="#guia-contribucion">
-                    Cómo contribuir
-                    <span aria-hidden="true">→</span>
+                <a
+                    class="button button-primary"
+                    href="https://t.me/IngesisUniquindio"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <i class="fa-brands fa-telegram" aria-hidden="true"></i>
+                    Unirme al grupo
+                    <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
                 </a>
             </section>
 
-            <section class="guidelines-section" id="guia-contribucion"
-                aria-labelledby="guidelinesTitle">
+
+            <!-- =====================================
+                 PAUTAS DE PARTICIPACIÓN
+            ====================================== -->
+            <section
+                class="guidelines-section"
+                id="guia-contribucion"
+                aria-labelledby="guidelinesTitle"
+            >
                 <div>
-                    <span class="eyebrow">PARTICIPACIÓN RESPONSABLE</span>
-                    <h2 id="guidelinesTitle">Compartir bien también importa</h2>
+                    <span class="eyebrow">
+                        <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+                        PARTICIPACIÓN RESPONSABLE
+                    </span>
+
+                    <h2 id="guidelinesTitle">
+                        Compartir bien también importa
+                    </h2>
+
                     <p class="section-description">
-                        Antes de proponer un recurso, revisa estas pautas.
+                        La idea es construir una comunidad útil, organizada
+                        y respetuosa con el trabajo de los demás.
                     </p>
                 </div>
 
                 <div class="guidelines-grid">
+
                     <article class="guideline-card">
-                        <span class="guideline-number">01</span>
+                        <span class="guideline-number">
+                            <i class="fa-solid fa-copyright" aria-hidden="true"></i>
+                        </span>
+
                         <h3>Respeta la autoría</h3>
+
                         <p>
-                            Comparte materiales propios, con licencia compatible
-                            o cuyo autor haya autorizado su distribución.
+                            Comparte materiales propios, contenidos con licencia
+                            compatible o materiales cuya distribución haya sido
+                            autorizada. Da crédito a sus autores y fuentes.
                         </p>
                     </article>
 
+
                     <article class="guideline-card">
-                        <span class="guideline-number">02</span>
-                        <h3>Describe el material</h3>
+                        <span class="guideline-number">
+                            <i class="fa-solid fa-file-circle-check" aria-hidden="true"></i>
+                        </span>
+
+                        <h3>Describe lo que compartes</h3>
+
                         <p>
-                            Indica el tema, la asignatura, el tipo de recurso
-                            y la fuente original.
+                            Indica la asignatura, el tema, el tipo de recurso
+                            y, cuando sea posible, el semestre o contexto
+                            académico al que corresponde.
                         </p>
                     </article>
 
+
                     <article class="guideline-card">
-                        <span class="guideline-number">03</span>
-                        <h3>Verifica los enlaces</h3>
+                        <span class="guideline-number">
+                            <i class="fa-solid fa-user-shield" aria-hidden="true"></i>
+                        </span>
+
+                        <h3>Cuida la privacidad</h3>
+
                         <p>
-                            Comprueba que el recurso abra correctamente y no
-                            exponga datos privados de otras personas.
+                            Evita publicar datos personales, credenciales,
+                            información privada de compañeros o documentos
+                            que no tengas permiso para distribuir.
                         </p>
                     </article>
+
                 </div>
 
-                <p class="contribution-note">
-                    En esta primera versión, las contribuciones se incorporan
-                    mediante cambios revisados en el repositorio del proyecto.
-                    El portal todavía no recibe archivos directamente.
-                </p>
-            </section>
 
-            <section class="about-section" id="acerca">
-                <div class="about-mark" aria-hidden="true">&lt;/&gt;</div>
-                <div>
-                    <h2>Conocimiento sin barreras</h2>
-                    <p>
-                        Un proyecto comunitario independiente para organizar
-                        y descubrir recursos educativos. No es un portal oficial
-                        de la Universidad del Quindío.
+                <div
+                    style="
+                        display: flex;
+                        align-items: flex-start;
+                        gap: 0.9rem;
+                        margin-top: 1.5rem;
+                    "
+                >
+                    <i
+                        class="fa-solid fa-circle-info"
+                        aria-hidden="true"
+                        style="margin-top: 0.2rem;"
+                    ></i>
+
+                    <p class="contribution-note" style="margin: 0;">
+                        Por ahora, las propuestas y el intercambio de materiales
+                        se gestionan a través del grupo de Telegram.
+                        Los recursos que aparecen en la biblioteca del sitio
+                        se mantienen por separado en el catálogo del proyecto.
+                        La página no necesita una base de datos ni permite
+                        subir archivos automáticamente.
                     </p>
                 </div>
             </section>
+
+
+            <!-- =====================================
+                 COMUNIDAD DE TELEGRAM
+            ====================================== -->
+            <section
+                class="about-section"
+                id="comunidad"
+                aria-labelledby="communityTitle"
+            >
+                <div class="about-mark" aria-hidden="true">
+                    <i class="fa-brands fa-telegram"></i>
+                </div>
+
+                <div>
+                    <span class="eyebrow">
+                        CONECTA CON OTROS ESTUDIANTES
+                    </span>
+
+                    <h2 id="communityTitle">
+                        El conocimiento se comparte
+                    </h2>
+
+                    <p>
+                        Únete a la comunidad para compartir recursos,
+                        resolver dudas, conocer materiales de estudio
+                        y conversar sobre programación y computación.
+                    </p>
+
+                    <p>
+                        El grupo es el punto de encuentro para los miembros;
+                        la biblioteca web sirve para organizar y descubrir
+                        los recursos que se vayan recopilando.
+                    </p>
+
+                    <a
+                        class="button button-primary"
+                        href="https://t.me/IngesisUniquindio"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style="margin-top: 0.75rem;"
+                    >
+                        <i class="fa-brands fa-telegram" aria-hidden="true"></i>
+                        Abrir grupo de Telegram
+                        <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </section>
+
+
+            <!-- =====================================
+                 ACERCA DEL PROYECTO
+            ====================================== -->
+            <section
+                class="about-section"
+                id="acerca"
+                aria-labelledby="aboutTitle"
+            >
+                <div class="about-mark" aria-hidden="true">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+
+                <div>
+                    <h2 id="aboutTitle">
+                        Conocimiento sin barreras
+                    </h2>
+
+                    <p>
+                        Java UQ Community es un proyecto comunitario
+                        independiente dedicado a reunir, organizar y compartir
+                        recursos relacionados con la programación y las
+                        ciencias de la computación, con especial enfoque
+                        en los estudiantes de la Universidad del Quindío.
+                    </p>
+
+                    <p>
+                        No es un portal oficial de la Universidad del Quindío
+                        ni representa institucionalmente a la universidad.
+                    </p>
+                </div>
+            </section>
+
         </main>
 
+
+        <!-- =========================================
+             PIE DE PÁGINA
+        ========================================== -->
         <footer class="footer">
             <a class="footer-brand" href="./index.html">
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
                 Java UQ <span>Community</span>
             </a>
 
             <p>
-                Hecho para aprender y compartir.
+                Hecho para aprender, compartir y construir conocimiento.
             </p>
 
+            <a
+                href="https://t.me/IngesisUniquindio"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visitar el grupo de Telegram"
+            >
+                <i class="fa-brands fa-telegram" aria-hidden="true"></i>
+                Telegram
+            </a>
+
             <a href="#mainContent" class="back-to-top">
-                Volver arriba ↑
+                Volver arriba
+                <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
             </a>
         </footer>
+
     </div>
 </body>
 </html>
