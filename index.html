@@ -1,18 +1,21 @@
-<!DOCTYPE html>
-<html lang="es" data-theme="mocha">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Identidad de la página -->
+<title>Java UQ Community | Aprende, comparte y programa</title>
 
-    <meta
-        name="description"
-        content="Java UQ Community: comunidad de aprendizaje y recursos de programación, software y ciencias de la computación para estudiantes de la Universidad del Quindío."
-    >
+<!-- Icono de la pestaña del navegador -->
+<link
+    rel="icon"
+    type="image/png"
+    href="https://upload.wikimedia.org/wikipedia/commons/7/7b/Java_Cup.png"
+>
 
-    <meta name="author" content="Java UQ Community">
-    <meta name="theme-color" content="#1e1e2e">
+<!-- Icono para dispositivos Apple -->
+<link
+    rel="apple-touch-icon"
+    href="https://upload.wikimedia.org/wikipedia/commons/7/7b/Java_Cup.png"
+>
 
-    <title>Java UQ Community | Aprende, comparte y programa</title>
+<!-- Color del navegador en dispositivos compatibles -->
+<meta name="theme-color" content="#1e1e2e">
 
     <!-- Hoja de estilos del proyecto -->
     <link rel="stylesheet" href="./CSS/style.css">
@@ -581,186 +584,89 @@
                 </p>
             </section>
 
+<!-- Biblioteca de materiales -->
+<div
+    class="resource-grid"
+    id="resourceGrid"
+    aria-busy="true"
+>
+    <!-- Apuntes y guías -->
+    <article class="resource-card resource-card-featured">
+        <img
+            class="resource-image"
+            src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=800&q=85"
+            alt="Libros y apuntes para estudiar"
+            loading="lazy"
+        >
 
-            <!-- =====================================
-                 BIBLIOTECA DE RECURSOS
-            ====================================== -->
-            <section
-                class="resource-section"
-                id="recursos"
-                aria-labelledby="resourcesTitle"
-            >
-                <div class="section-heading">
-                    <div>
-                        <span class="eyebrow">
-                            <i class="fa-solid fa-book-open" aria-hidden="true"></i>
-                            BIBLIOTECA DIGITAL
-                        </span>
+        <div class="resource-card-content">
+            <span class="resource-type">
+                <i class="fa-solid fa-book-open" aria-hidden="true"></i>
+                Material de estudio
+            </span>
 
-                        <h2 id="resourcesTitle">
-                            Explora los recursos
-                        </h2>
+            <h3>Apuntes y guías</h3>
 
-                        <p class="section-description">
-                            Talleres, apuntes, guías, presentaciones,
-                            ejercicios y documentación para estudiar
-                            y aprender en comunidad.
-                        </p>
-                    </div>
+            <p>
+                Conceptos, explicaciones y material de apoyo
+                para comprender los temas de cada asignatura.
+            </p>
+        </div>
+    </article>
 
-                    <span
-                        class="resource-total"
-                        id="resultCount"
-                        aria-live="polite"
-                        aria-atomic="true"
-                    >
-                        Cargando recursos...
-                    </span>
-                </div>
+    <!-- Talleres y ejercicios -->
+    <article class="resource-card resource-card-featured">
+        <img
+            class="resource-image"
+            src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=800&q=85"
+            alt="Código fuente en un editor de programación"
+            loading="lazy"
+        >
 
+        <div class="resource-card-content">
+            <span class="resource-type">
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
+                Práctica
+            </span>
 
-                <!-- Búsqueda y filtros -->
-                <div class="filters">
-                    <div class="search-wrap">
-                        <label class="sr-only" for="searchInput">
-                            Buscar recursos
-                        </label>
+            <h3>Talleres y ejercicios</h3>
 
-                        <span class="search-icon" aria-hidden="true">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </span>
+            <p>
+                Actividades prácticas para desarrollar la lógica,
+                resolver problemas y mejorar tus habilidades.
+            </p>
+        </div>
+    </article>
 
-                        <input
-                            id="searchInput"
-                            type="search"
-                            placeholder="Buscar por título, tema o descripción..."
-                            autocomplete="off"
-                            spellcheck="false"
-                        >
+    <!-- Documentación y presentaciones -->
+    <article class="resource-card resource-card-featured">
+        <img
+            class="resource-image"
+            src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=85"
+            alt="Componentes electrónicos y tecnología informática"
+            loading="lazy"
+        >
 
-                        <kbd>Buscar</kbd>
-                    </div>
+        <div class="resource-card-content">
+            <span class="resource-type">
+                <i class="fa-solid fa-file-lines" aria-hidden="true"></i>
+                Consulta
+            </span>
 
-                    <div class="filter-row">
-                        <div class="filter-control">
-                            <label for="subjectFilter">
-                                <i class="fa-solid fa-book" aria-hidden="true"></i>
-                                Asignatura
-                            </label>
+            <h3>Documentación y presentaciones</h3>
 
-                            <select id="subjectFilter">
-                                <option value="all">
-                                    Todas las asignaturas
-                                </option>
-                            </select>
-                        </div>
+            <p>
+                Referencias técnicas, diapositivas y documentación
+                para profundizar en informática y sistemas.
+            </p>
+        </div>
+    </article>
 
-                        <div class="filter-control">
-                            <label for="typeFilter">
-                                <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
-                                Tipo de recurso
-                            </label>
-
-                            <select id="typeFilter">
-                                <option value="all">
-                                    Todos los tipos
-                                </option>
-                            </select>
-                        </div>
-
-                        <button
-                            class="button button-secondary"
-                            id="clearFilters"
-                            type="button"
-                        >
-                            <i class="fa-solid fa-rotate-left" aria-hidden="true"></i>
-                            Limpiar filtros
-                        </button>
-                    </div>
-                </div>
-
-
-                <div class="results-heading">
-                    <h3>
-                        <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
-                        Biblioteca de materiales
-                    </h3>
-
-                    <span id="activeFilterLabel">
-                        Todos los recursos
-                    </span>
-                </div>
-
-
-                <!-- Los recursos son cargados desde data/materials.json -->
-                <div
-                    class="resource-grid"
-                    id="resourceGrid"
-                    aria-busy="true"
-                >
-                    <p class="loading-message">
-                        <i class="fa-solid fa-spinner fa-spin" aria-hidden="true"></i>
-                        Cargando biblioteca...
-                    </p>
-                </div>
-
-
-                <div class="empty-state" id="emptyState" hidden>
-                    <span class="empty-icon" aria-hidden="true">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </span>
-
-                    <h3>No encontramos resultados</h3>
-
-                    <p>
-                        Prueba con otras palabras o elimina alguno de los filtros.
-                    </p>
-
-                    <button
-                        class="button button-secondary"
-                        id="emptyClearFilters"
-                        type="button"
-                    >
-                        <i class="fa-solid fa-list" aria-hidden="true"></i>
-                        Mostrar todos los recursos
-                    </button>
-                </div>
-
-
-                <p class="catalog-note" id="catalogNote">
-                    <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
-                    Los enlaces llevan a sus respectivas fuentes.
-                    Comprueba las condiciones de uso de cada material.
-                </p>
-
-
-                <div
-                    style="
-                        display: flex;
-                        flex-wrap: wrap;
-                        align-items: center;
-                        justify-content: space-between;
-                        gap: 1rem;
-                        margin-top: 1.5rem;
-                    "
-                >
-                    <p style="margin: 0;">
-                        ¿Conoces un recurso que debería estar aquí?
-                    </p>
-
-                    <a
-                        class="button button-secondary"
-                        href="https://t.me/IngesisUniquindio"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <i class="fa-brands fa-telegram" aria-hidden="true"></i>
-                        Proponer un recurso
-                        <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
-                    </a>
-                </div>
-            </section>
-
+    <p class="loading-message">
+        <i class="fa-solid fa-spinner fa-spin" aria-hidden="true"></i>
+        Cargando biblioteca...
+    </p>
+</div>
 
             <!-- =====================================
                  CONTRIBUCIONES

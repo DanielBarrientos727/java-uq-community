@@ -1138,3 +1138,59 @@ select:focus-visible {
         margin: 0;
     }
 }
+
+
+/* Tarjetas con imágenes de la biblioteca */
+.resource-card-featured {
+    overflow: hidden;
+    padding: 0;
+}
+
+.resource-image {
+    display: block;
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    background-color: var(--surface0, #313244);
+    transition: transform 0.35s ease;
+}
+
+.resource-card-featured:hover .resource-image {
+    transform: scale(1.035);
+}
+
+.resource-card-content {
+    padding: 1.25rem;
+}
+
+.resource-type {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--mauve, #cba6f7);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.resource-card-content h3 {
+    margin: 0 0 0.65rem;
+}
+
+.resource-card-content p {
+    margin: 0;
+    line-height: 1.65;
+    color: var(--subtext1, #bac2de);
+}
+
+@media (max-width: 600px) {
+    .resource-image {
+        height: 170px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .resource-image {
+        transition: none;
+    }
+}
