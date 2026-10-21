@@ -1192,3 +1192,18 @@ select:focus-visible {
         transition: none;
     }
 }
+
+/* Logo oficial de Java */
+.brand-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.java-logo {
+    display: block;
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+}
