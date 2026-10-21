@@ -1,0 +1,36 @@
+
+[
+    {
+        "id": "java-dev-learn",
+        "title": "Aprende Java",
+        "description": "Tutoriales y recursos oficiales para aprender los fundamentos del lenguaje Java y avanzar hacia conceptos más complejos.",
+        "subject": "Java",
+        "type": "Curso",
+        "format": "Web",
+        "source": "dev.java",
+        "url": "https://dev.java/learn/",
+        "license": "Consultar condiciones de uso"
+    },
+    {
+        "id": "java-oracle-tutorial",
+        "title": "Tutorial de Java de Oracle",
+        "description": "Tutoriales sobre conceptos fundamentales del lenguaje, clases, objetos, interfaces y otros elementos de Java.",
+        "subject": "Fundamentos",
+        "type": "Documentación",
+        "format": "Web",
+        "source": "Oracle",
+        "url": "https://docs.oracle.com/javase/tutorial/",
+        "license": "Consultar condiciones de uso"
+    },
+    {
+        "id": "java-getting-started",
+        "title": "Primeros pasos con Java",
+        "description": "Material introductorio para conocer el ecosistema Java, preparar el entorno y comenzar a programar.",
+        "subject": "Herramientas",
+        "type": "Guía",
+        "format": "Web",
+        "source": "dev.java",
+        "url": "https://dev.java/learn/",
+        "license": "Consultar condiciones de uso"
+    }
+]

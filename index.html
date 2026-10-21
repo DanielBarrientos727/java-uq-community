@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+<html lang="es" data-theme="mocha">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Portal comunitario de recursos académicos: talleres, apuntes, diapositivas y documentación para estudiantes."
+    >
+    <meta name="author" content="Java UQ Community">
+    <meta name="theme-color" content="#1e1e2e">
+
+    <title>Java UQ Community | Recursos académicos</title>
+
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="./js/main.js" defer></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#mainContent">
+        Saltar al contenido principal
+    </a>
+
+    <div class="app">
+        <header class="topbar">
+            <a class="brand" href="./index.html" aria-label="Java UQ Community, inicio">
+                <span class="brand-icon" aria-hidden="true">&lt;/&gt;</span>
+                <span class="brand-copy">
+                    <strong>Java UQ</strong>
+                    <span>COMMUNITY</span>
+                </span>
+            </a>
+
+            <nav class="topnav" aria-label="Navegación principal">
+                <a class="nav-link active" href="#recursos">Recursos</a>
+                <a class="nav-link" href="#contribuir">Contribuir</a>
+                <a class="nav-link" href="#acerca">Acerca de</a>
+            </nav>
+
+            <span class="status-label">
+                <span class="status-dot" aria-hidden="true"></span>
+                Comunidad abierta
+            </span>
+        </header>
+
+        <main id="mainContent">
+            <section class="hero" aria-labelledby="heroTitle">
+                <div class="hero-content">
+                    <span class="eyebrow">
+                        <span aria-hidden="true">✳</span>
+                        CONOCIMIENTO COMPARTIDO
+                    </span>
+
+                    <h1 id="heroTitle">
+                        Aprende. Comparte.<br>
+                        <span>Construye conocimiento.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Un espacio comunitario para encontrar recursos
+                        académicos, estudiar programación y compartir
+                        materiales útiles con otros estudiantes.
+                    </p>
+
+                    <a class="button button-primary" href="#recursos">
+                        Explorar recursos
+                        <span aria-hidden="true">→</span>
+                    </a>
+                </div>
+
+                <div class="hero-decoration" aria-hidden="true">
+                    <div class="orb orb-one"></div>
+                    <div class="orb orb-two"></div>
+                    <div class="code-window">
+                        <div class="window-bar">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span class="window-title">study.java</span>
+                        </div>
+                        <pre><code><span class="syntax-purple">public class</span> <span class="syntax-blue">Aprendizaje</span> {
+    <span class="syntax-purple">public static void</span> estudiar() {
+        <span class="syntax-green">compartir</span>();
+        <span class="syntax-green">aprender</span>();
+    }
+}</code></pre>
+                    </div>
+                    <span class="decoration-label">LEARN TOGETHER_</span>
+                </div>
+            </section>
+
+            <section class="resource-section" id="recursos"
+                aria-labelledby="resourcesTitle">
+
+                <div class="section-heading">
+                    <div>
+                        <span class="eyebrow">BIBLIOTECA DIGITAL</span>
+                        <h2 id="resourcesTitle">Explora los recursos</h2>
+                        <p class="section-description">
+                            Material organizado para encontrar lo que necesitas.
+                        </p>
+                    </div>
+
+                    <span class="resource-total" id="resultCount"
+                        aria-live="polite" aria-atomic="true">
+                        Cargando recursos...
+                    </span>
+                </div>
+
+                <div class="filters">
+                    <div class="search-wrap">
+                        <label class="sr-only" for="searchInput">
+                            Buscar recursos
+                        </label>
+                        <span class="search-icon" aria-hidden="true">⌕</span>
+                        <input
+                            id="searchInput"
+                            type="search"
+                            placeholder="Buscar por título, tema o descripción..."
+                            autocomplete="off"
+                            spellcheck="false"
+                        >
+                        <kbd>Buscar</kbd>
+                    </div>
+
+                    <div class="filter-row">
+                        <div class="filter-control">
+                            <label for="subjectFilter">Asignatura</label>
+                            <select id="subjectFilter">
+                                <option value="all">Todas las asignaturas</option>
+                            </select>
+                        </div>
+
+                        <div class="filter-control">
+                            <label for="typeFilter">Tipo de recurso</label>
+                            <select id="typeFilter">
+                                <option value="all">Todos los tipos</option>
+                            </select>
+                        </div>
+
+                        <button class="button button-secondary"
+                            id="clearFilters" type="button">
+                            Limpiar filtros
+                        </button>
+                    </div>
+                </div>
+
+                <div class="results-heading">
+                    <h3>Biblioteca de materiales</h3>
+                    <span id="activeFilterLabel">Todos los recursos</span>
+                </div>
+
+                <div class="resource-grid" id="resourceGrid"
+                    aria-busy="true">
+                    <p class="loading-message">Cargando biblioteca...</p>
+                </div>
+
+                <div class="empty-state" id="emptyState" hidden>
+                    <span class="empty-icon" aria-hidden="true">⌕</span>
+                    <h3>No encontramos resultados</h3>
+                    <p>
+                        Prueba con otras palabras o elimina alguno de los filtros.
+                    </p>
+                    <button class="button button-secondary"
+                        id="emptyClearFilters" type="button">
+                        Mostrar todos los recursos
+                    </button>
+                </div>
+
+                <p class="catalog-note" id="catalogNote">
+                    Los enlaces llevan a sus respectivas fuentes.
+                    Comprueba las condiciones de uso de cada material.
+                </p>
+            </section>
+
+            <section class="contribute-section" id="contribuir"
+                aria-labelledby="contributeTitle">
+                <div class="contribute-icon" aria-hidden="true">
+                    <span>+</span>
+                </div>
+
+                <div class="contribute-copy">
+                    <span class="eyebrow">LA COMUNIDAD LA CONSTRUIMOS TODOS</span>
+                    <h2 id="contributeTitle">¿Tienes algo útil que compartir?</h2>
+                    <p>
+                        Puedes proponer talleres, apuntes propios, presentaciones
+                        autorizadas o documentación que ayude a otros estudiantes.
+                    </p>
+                </div>
+
+                <a class="button button-primary"
+                    href="#guia-contribucion">
+                    Cómo contribuir
+                    <span aria-hidden="true">→</span>
+                </a>
+            </section>
+
+            <section class="guidelines-section" id="guia-contribucion"
+                aria-labelledby="guidelinesTitle">
+                <div>
+                    <span class="eyebrow">PARTICIPACIÓN RESPONSABLE</span>
+                    <h2 id="guidelinesTitle">Compartir bien también importa</h2>
+                    <p class="section-description">
+                        Antes de proponer un recurso, revisa estas pautas.
+                    </p>
+                </div>
+
+                <div class="guidelines-grid">
+                    <article class="guideline-card">
+                        <span class="guideline-number">01</span>
+                        <h3>Respeta la autoría</h3>
+                        <p>
+                            Comparte materiales propios, con licencia compatible
+                            o cuyo autor haya autorizado su distribución.
+                        </p>
+                    </article>
+
+                    <article class="guideline-card">
+                        <span class="guideline-number">02</span>
+                        <h3>Describe el material</h3>
+                        <p>
+                            Indica el tema, la asignatura, el tipo de recurso
+                            y la fuente original.
+                        </p>
+                    </article>
+
+                    <article class="guideline-card">
+                        <span class="guideline-number">03</span>
+                        <h3>Verifica los enlaces</h3>
+                        <p>
+                            Comprueba que el recurso abra correctamente y no
+                            exponga datos privados de otras personas.
+                        </p>
+                    </article>
+                </div>
+
+                <p class="contribution-note">
+                    En esta primera versión, las contribuciones se incorporan
+                    mediante cambios revisados en el repositorio del proyecto.
+                    El portal todavía no recibe archivos directamente.
+                </p>
+            </section>
+
+            <section class="about-section" id="acerca">
+                <div class="about-mark" aria-hidden="true">&lt;/&gt;</div>
+                <div>
+                    <h2>Conocimiento sin barreras</h2>
+                    <p>
+                        Un proyecto comunitario independiente para organizar
+                        y descubrir recursos educativos. No es un portal oficial
+                        de la Universidad del Quindío.
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <a class="footer-brand" href="./index.html">
+                Java UQ <span>Community</span>
+            </a>
+
+            <p>
+                Hecho para aprender y compartir.
+            </p>
+
+            <a href="#mainContent" class="back-to-top">
+                Volver arriba ↑
+            </a>
+        </footer>
+    </div>
+</body>
+</html>
